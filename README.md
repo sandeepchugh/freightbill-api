@@ -11,3 +11,12 @@ npm install -g sql-cli
 OR
 
 https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
+
+
+### Build Docker Image
+
+Run from root of project (containing the solution)
+```
+docker build -f Freightbills.Api/Dockerfile -t freightbills:0.1 .
+```
+ 

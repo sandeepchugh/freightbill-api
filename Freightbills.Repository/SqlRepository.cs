@@ -5,18 +5,15 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
-using Microsoft.Extensions.Configuration;
 
 namespace Freightbills.Repository
 {
      public class SqlRepository
     {
-        private readonly IConfiguration _configuration;
         private readonly string _connectionString;
-        public SqlRepository(IConfiguration configuration)
+        public SqlRepository(string connectionString)
         {
-            _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString = connectionString;
         }
 
         // use for buffered queries that return a type

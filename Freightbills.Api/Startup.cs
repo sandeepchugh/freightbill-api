@@ -26,9 +26,10 @@ namespace Freightbills.Api
         {
             //services.AddAuthentication(AzureADB2CDefaults.BearerAuthenticationScheme)
             //    .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddMediatR(typeof(LastPayments.Handler).Assembly);
             services.AddTransient<SqlRepository>(conn =>
-                new SqlRepository(Configuration));
+                new SqlRepository(connectionString));
             
             services.AddCors(options =>
             {
