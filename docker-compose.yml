@@ -9,6 +9,8 @@ services:
       - db
   db:
     image: "mcr.microsoft.com/mssql/server"
+    ports:
+      - "1433:1433"
     environment:
       SA_PASSWORD: "Freightbills123"
       ACCEPT_EULA: "Y"
