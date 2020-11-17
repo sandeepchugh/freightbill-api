@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freightbills.Api", "Freightbills.Api\Freightbills.Api.csproj", "{1179392C-D471-47E4-B1B5-2D1C37001100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freightbills.Domain", "Freightbills.Domain\Freightbills.Domain.csproj", "{DC0A6580-654E-426F-8299-0E104E8AF66C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freightbills.Repository", "Freightbills.Repository\Freightbills.Repository.csproj", "{D92EEBB6-0238-41D1-B24E-D20DF7588879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Freightbills.Application", "Freightbills.Application\Freightbills.Application.csproj", "{C55EBBD0-2079-42E4-98D9-968A405D5234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1179392C-D471-47E4-B1B5-2D1C37001100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1179392C-D471-47E4-B1B5-2D1C37001100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1179392C-D471-47E4-B1B5-2D1C37001100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1179392C-D471-47E4-B1B5-2D1C37001100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0A6580-654E-426F-8299-0E104E8AF66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0A6580-654E-426F-8299-0E104E8AF66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0A6580-654E-426F-8299-0E104E8AF66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0A6580-654E-426F-8299-0E104E8AF66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92EEBB6-0238-41D1-B24E-D20DF7588879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92EEBB6-0238-41D1-B24E-D20DF7588879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92EEBB6-0238-41D1-B24E-D20DF7588879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92EEBB6-0238-41D1-B24E-D20DF7588879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C55EBBD0-2079-42E4-98D9-968A405D5234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C55EBBD0-2079-42E4-98D9-968A405D5234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C55EBBD0-2079-42E4-98D9-968A405D5234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C55EBBD0-2079-42E4-98D9-968A405D5234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

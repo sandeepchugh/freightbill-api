@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "Freightbills123"
+      ACCEPT_EULA: "Y"
