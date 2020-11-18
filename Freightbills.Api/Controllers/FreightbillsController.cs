@@ -1,4 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Freightbills.Application.Research;
+using Freightbills.Domain;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -9,23 +13,19 @@ namespace Freightbills.Api.Controllers
     [Route("[controller]")]
     public class FreightbillsController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<FreightbillsController> _logger;
-
-        public FreightbillsController(ILogger<FreightbillsController> logger)
+        private readonly IMediator _mediator;
+        
+        public FreightbillsController(IMediator mediator,ILogger<FreightbillsController> logger)
         {
+            _mediator = mediator;
             _logger = logger;
         }
 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<FreightBill>> Get()
         {
-            var weatherList = new List<string>(){"warm"};
-            return weatherList;
+            return await _mediator.Send(new FreightbillResearch.Query());
         }
     }
 }
