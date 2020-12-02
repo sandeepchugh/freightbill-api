@@ -41,6 +41,10 @@ OR
 https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
 
 
+#### Configuring Logging
+
+https://serilog.net
+
 #### Running the application
 ```
 cd Freightbills.Api
